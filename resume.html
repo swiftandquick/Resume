@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="mainStyles.css">
+</head>
+<body>
+   <header>
+		
+		<div id="ball" onclick="alert('Why did you click on the sun?  ')"></div>
+		
+		<img name="topBar" src="Images/topBar.bmp" alt="topBar"/>
+		<script language="javascript" type="text/javascript" src="topBarAnimation.js" onLoad="select()"></script>
+		
+		<nav id="navigation" align="center">
+			<ul>
+				<li><a href="#websites">Websites</a></li>
+				<li><a href="#summary">Summary</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#personalProjects">Personal Projects</a></li>
+				<li><a href="#clubsAndAffiliations">Clubs and Affiliations</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<article id="mainContent">      
+   
+		<div>
+			<center><canvas id="portrait" width="200" height="200"></canvas></center>
+			<script language="javascript" type="text/javascript" src="portraitAnimation.js"></script>
+			<h1>Yong Chen</h1>
+		</div>
+      
+		<section id="websites">
+			<h2>Websites</h2>
+			<hr>
+			<img src="Images/websites.bmp" usemap="#websitesMap" alt="Websites">
+			<map name="websitesMap" id="websitesMap">
+				<area shape="rect" coords="0, 0, 250, 200" href="https://github.com/swiftandquick" 
+				target="_blank" alt="GitHub" title="Go to my GitHub page.  ">
+				<area shape="rect" coords="250, 0, 500, 200" href="https://computerscience340151212.wordpress.com/"
+				target="_blank" alt="WordPress" title="Go to my WordPress page.  ">
+			</map>
+		</section>
+		<section id="summary">
+			<h2>Summary</h2> 
+			<hr>
+			<p>
+			</p>
+			<p><b><u>Phone Number:</u></b>  857-654-0198.  </p>
+			<!-- Click on the link to write an email.  -->
+			<p>
+				<b><u>Email:</u></b>  
+				<a href="mailto:chenyMA16@gmail.com
+					?subject=Feedback
+					&body='Hi Yong, ">chenyMA16@gmail.com</a></p>
+			<p>
+				<b><u>Background:</u></b>  I graduated with a bachelor’s degree in Computer Science in August 2020.  
+				Among academic subjects, I have a strong preference on mathematics and programming.  I had some 
+				experience with project based work, desk job, online sales, and retail.  Currently, I am self-learning
+				computer science through programming books and online lectures from Udemy.  My desire is to work in a 
+				field that I can apply my knowledge on.  
+			</p>
+		</section>
+
+		<section id="education">
+			<h2>Education</h2> 
+			<hr>
+			
+			<!-- Every time these two elements are click, they changeSlide() function from slideShow.js.  -->
+			<center>
+				<a class="prev" onclick="changeSlide(-1)">&#10094; Previous</a>
+				<a class="next" onclick="changeSlide(1)">Next &#10095;</a>
+			</center>
+			
+			<br>
+
+			<div class="slideshow-container">
+		
+				<div class="mySlides fade">
+				<center>
+					<a href="https://maldenps.org/ferryway/" target="_blank"
+						title="Ferryway School's Official Website">
+						<img src="Images/ferrywaySchool.bmp" height='500' width='750'>
+					</a>
+					<hr style="width:50%"></hr>
+					<h3>Ferryway School</h3>
+					<br>
+					<table style="width:75%">
+						<tr>
+							<th align="center">Address</th>
+							<th align="center">Graduation</th>
+						</tr>
+						<tr>
+							<td align="center">150 Cross St, Malden, MA 02148</td>
+							<td align="center">May 2010</td>
+						</tr>
+					</table>
+				</center>
+				</div>
+
+				<div class="mySlides fade">
+				<center>
+					<a href="https://maldenps.org/high/" target="_blank"
+						title="Malden High School's Official Website">
+						<img src="Images/maldenHighSchool.bmp" height='500' width='750'>
+					</a>
+					<hr style="width:50%"></hr>
+					<h3>Malden High School</h3>
+					<br>
+					<table style="width:75%">
+						<tr>
+							<th align="center">Address</th>
+							<th align="center">Graduation</th>
+						</tr>
+						<tr>
+							<td align="center">77 Salem St, Malden, MA 02148</td>
+							<td align="center">May 2014</td>
+						</tr>
+					</table>
+				</center>
+				</div>
+			
+				<div class="mySlides fade">
+				<center>
+					<a href="https://wit.edu/" target="_blank"
+						title="Wentworth Institute of Technology's Official Website">
+						<img src="Images/wentworthInstituteOfTechnology.bmp" height='500' width='750'>
+					</a>
+					<hr style="width:50%"></hr>
+					<h3>Wentworth Institute of Technology</h3>
+					<br>
+					<table style="width:75%">
+						<tr>
+							<th align="center">Address</th>
+							<th align="center">Graduation</th>
+							<th align="center">GPA</th>
+							<th align="center">Major</th>
+						</tr>
+						<tr>
+							<td align="center">550 Huntington Ave Boston, MA 02115</td>
+							<td align="center">August 2018</td>
+							<td align="center">3.53</td>
+							<td align="center">Computer Science</td>
+						</tr>
+					</table>
+				</center>
+				</div>
+				
+			</div>
+			
+			<script language="javascript" type="text/javascript" src="slideShow.js"></script>
+
+		</section>
+
+		<section id="skills">
+			<h2>Skills</h2>
+			<hr>
+			<center>
+				<div>
+					<h3>Java</h3>
+					<p>
+						<img src="Images/skillJava.bmp" width='100' height='100'> 
+						<ul>
+							<li>Object-oriented paradigm.  </li>
+							<li>Statically typed, which makes it one of the faster languages.  </li>
+							<li>Often used for enterprise environment.  </li>
+							<li>Can be run in any machine that has JVM installed.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+				<div class="tiltLeft">
+					<h3>JavaScript</h3>
+					<p>
+						<img src="Images/skillJavaScript.bmp" width='100' height='100'> 
+						<ul>
+							<li>Dynamically typed, no type declaration required.  </li>
+							<li>Can be used for both front-end and back-end language in web development.  </li>
+							<li>This resume is written with HTML, CSS, and JavaScript.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+				<div class="tiltRight">
+					<h3>HTML</h3>
+					<p>
+						<img src="Images/skillHTML.bmp" width='100' height='100'> 
+						<ul>
+							<li>Short for hypertext markup language.  </li>
+							<li>As the name implies, it's a markup language.  </li>
+							<li>Sets the general layout for web pages.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+				<div class="tiltLeft">
+					<h3>CSS</h3>
+					<p>
+						<img src="Images/skillCSS.bmp" width='100' height='100'> 
+						<ul>
+							<li>Short for cascading style sheets.  </li>
+							<li>Beatifies web page by styling them.  </li>
+							<li>CSS codes can be written inline, inside the head tags, or in an entirely separate file.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+				<div class="tiltRight">
+					<h3>SQL</h3>
+					<p>
+						<img src="Images/skillSQL.bmp" width='100' height='100'> 
+						<ul>
+							<li>Used for database management.  </li>
+							<li>Usually, entity relationship diagram (ERD) or relationship model (RM) are drawn before SQL implementation.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+				<div class="tiltLeft">
+					<h3>R</h3>
+					<p>
+						<img src="Images/skillR.bmp" width='100' height='100'> 
+						<ul>
+							<li>Used for statistical computing.  </li>
+							<li>Often not used to create software, but to solve complex mathematical problems.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+				<div class="tiltRight">
+					<h3>Software Tools</h3>
+					<p>
+						<img src="Images/skillTools.bmp" width='100' height='100'> 
+						<ul>
+							<li><u>Eclipse:</u>  Basic Java practice and web development with Java.  </li>
+							<li><u>Visual Studio Code:</u>  Basic web development with HTML, CSS, and JavaScript.  </li>
+							<li><u>Visual Studio:</u>  Basic C++ practice.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+				<div class="tiltLeft">
+					<ul>
+						<li><u>Android Studio:</u>  Use Java as back-end language with XML as front-end language to design android apps.  </li>
+						<li><u>RStudio:</u>  Use R codes to solve mathematical problems.  </li>
+						<li><u>Notepad++:</u>  Text and source code editor.  No compiler.  </li>
+						<li><u>Logisim:</u>  Used to simulate digital logic circuits.  </li>
+						<li><u>Microsoft Office:</u>  Includes Word, Excel, PowerPoint, and more.  </li>
+					</ul>
+				</div>
+				<div class="tiltRight">
+					<ul>
+						<li><u>XXAMP:</u>  Starting XAMPP is necessary to connect to phpMyAdmin.  Web development with JSP and servlets 
+							also requires XAMPP to be running.  </li>
+						<li><u>phpMyAdmin:</u>  A website used to database management with SQL codes.  </li>
+						<li><u>000WebHost:</u>  As the name suggested, it's used to host webs.  However, we connect an Android Studio app 
+							with 000Webhost in one of the projects that we did in college.  </li>
+					</ul>
+				</div>
+				<div>
+					<h3>Other Skills</h3>
+					<p>
+						<img src="Images/skillOther.bmp" width='100' height='100'> 
+						<ul>
+							<li><u>Troubleshooting for Windows:</u>  As a long time Windows user, I often troubleshoot and fix my computers 
+								by myself.  Most has to do with Googling and following instructions.  </li>
+							<li><u>Chinese Language:</u>  Chinese is my native language.  I am fluent in both Mandarin and Cantonese.  </li>
+						</ul>
+						</br>
+					</p>
+				</div>
+			</center>
+		</section>
+
+		<section id="experience">
+			
+			<h2>Experience</h2>
+			<hr>
+
+			<center>
+				<a class="newer" onclick="changeSlide2(-1)">&#10094; Newer</a>
+				<a class="older" onclick="changeSlide2(1)">Older &#10095;</a>
+			</center>
+			
+			<br>
+
+			<div class="slideshow-container2">
+		
+				<div class="mySlides2 fade">
+				<center>
+					<a href="https://stopandshop.com/" target="_blank"
+						title="Stop and Shop's Official Website">
+						<img src="Images/stopAndShop.bmp" height='500' width='750'>
+					</a>
+					<hr style="width:60%"></hr>
+					<h3>Stop and Shop</h3>
+					<p><u>Position:</u>  Cashier</p>
+					<p><u>Address:</u>  1620 Tremont St, Boston, MA 02120</p>
+					<p><u>Employment Duration:</u>  November 2017 – July 2018, April 2020 – May 2020</p>
+					<p><u>Job Description:</u>  Check out items and answer customer's questions.  </p>
+				</center>
+				</div>
+
+				<div class="mySlides2 fade">
+				<center>
+					<a href="https://www.missionpark.com/rth.htm" target="_blank"
+						title="Roxbury Tenants of Harvard's Official Website">
+						<img src="Images/roxburyTenantsOfHarvard.bmp" height='500' width='750'>
+					</a>
+					<hr style="width:60%"></hr>
+					<h3>Roxbury Tenants of Harvard</h3>
+					<p><u>Position:</u>  Front Desk (Pool)</p>
+					<p><u>Address:</u>  835 Huntington Ave, Boston, MA 02115</p>
+					<p><u>Employment Duration:</u>  June 2019 – August 2019</p>
+					<p><u>Job Description:</u>  Registered and maintain a list of guests that want to participate in RTH pool programs.  </p>
+				</center>
+				</div>
+			
+				<div class="mySlides2 fade">
+				<center>
+					<a href="https://www.empireauctioninc.com/" target="_blank"
+						title="Empire Auction House's Official Website">
+						<img src="Images/empireAuctionHouse.bmp" height='500' width='750'>
+					</a>
+					<hr style="width:60%"></hr>
+					<h3>Empire Auction House</h3>
+					<p><u>Position:</u>  Online Auctioneer & Translator</p>
+					<p><u>Address:</u>  835 Huntington Ave, Boston, MA 02115</p>
+					<p><u>Employment Duration:</u>  June 2019 – August 2019</p>
+					<p><u>Job Description:</u>  Help the company to sell Chinese arts and antiques through live auction websites.  
+						Customers are mostly from the U.S. and China, so translation between Chinese and English is necessary.  </p>
+				</center>
+				</div>
+				
+				<div class="mySlides2 fade">
+				<center>
+					<a href="https://wit.edu/" target="_blank"
+						title="Wentworth Institute of Technology's Official Website">
+						<img src="Images/wentworthInstituteOfTechnology.bmp" height='500' width='750'>
+					</a>
+					<hr style="width:60%"></hr>
+					<h3>Wentworth Institute of Technology</h3>
+					<p><u>Position:</u>  Co-op & Work Study</p>
+					<p><u>Address:</u>  550 Huntington Ave Boston, MA 02115</p>
+					<p><u>Employment Duration:</u>  January 2017 – April 2017, September 2017 – April 2018</p>
+					<p><u>Job Description for 2017 Spring Co-Op:</u>  Created a student advising app (incomplete) that uses an online 
+						web host that stores student information.  </p>
+					<p><u>Job Description for 2017 Fall Co-Op & 2018 Spring to Summer Work Study:</u>  Created a mobile application 
+						named ChattyChild that helps autistic children through Android Studio.  </p>
+				</div>
+				
+			</div>
+			
+			<script language="javascript" type="text/javascript" src="slideShow2.js"></script>
+			
+		</section>
+		
+		<section id = "personalProjects">
+			<h2>Personal Projects</h2> 
+			<hr>
+			<h3>Travel Project</h3>
+			<p><u>Class:</u>  Database Management System</p>
+			<p><u>Time of Completion:</u>  April 2016</p>
+			<p><u>Project Description:</u>  Created a database that allowed the users to check the detail of tour locations, the tourists, 
+				routes, and more.  Plans are first drawn on ERD and RM before creating tables in phpMyAdmin.  Use XAMPP to get into phpMyAdmin, 
+				then used SQL to create tables, sort elements, remove elements, and edit elements on phpMyAdmin.  </p>
+			<br>
+			<h3>Simple Calculator</h3>
+			<p><u>Time of Completion:</u>  July 2020</p>
+			<p><u>Project Description:</u>  Use Eclipse to create a simple calculator.  Provides functions of basic arithmetic, square root, 
+				power, and clear number, and on/off button.  </p>
+		</section>
+		
+		<section id = "clubsAndAffiliations">
+			<h2>Clubs and Affiliations</h2>
+			<hr>
+			<h3>Asian American Club</h3>
+			<p><u>Affiliation:</u>  Wentworth Institute of Technology</p>
+			<p><u>Position:</u>  Member</p>
+			<p><u>Membership Duration:</u>  September 2014 – April 2015</p>
+			<p><u>Details:</u>  The club emphasizes in Asian culture.  Members celebrate different cultures from different Asian countries.  </p>
+			<h3>League of Legends Club</h3>
+			<p><u>Affiliation:</u>  Wentworth Institute of Technology</p>
+			<p><u>Position:</u>  Member</p>
+			<p><u>Membership Duration:</u>  September 2014 – April 2015</p>
+			<p><u>Details:</u>  Members practice and have fun with a MOBA game called League of Legends.  The club once announced three 
+				separate teams, A team, B team, and C team.  The A team is the most competitive.  </p>
+		</section>
+
+	</article>
+
+	<div id="toTop">
+		<a href="#top" title="Go to top of the page.  ">
+			<img name="top" src="Images/fixedTop.bmp" alt="Top"
+				width="150" height="75">
+		</a>
+	</div>
+
+	<div id="myResume">
+		<a href="Resume.docx" download title="Download my resume.  ">
+			<img name="resume" src="Images/fixedResume.bmp" alt="Resume"
+				width="150" height="75">
+		</a>
+	</div>
+
+	<div id="myLinkedIn">
+		<a href="https://www.linkedin.com/in/yong-chen-11a7761aa/" 
+			target="_blank" title="Redirect to LinkedIn.  "
+			onMouseOut = "showPic1()" onMouseOver = "showPic2()">
+			<img name="linkedIn" src="Images/fixedOut.bmp" alt="LinkedIn"
+				width="150" height="75">
+		</a>
+		<script language="javascript" type="text/javascript" src="showPic.js"></script>
+	</div>
+
+	<footer>
+		<p id="copyright">Copyright &copy; 2020</p>
+	</footer>
+
+</body>
+</html>
